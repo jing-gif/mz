@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!--设置页面的字符集-->
+    <meta charset="utf-8">
+    <!--强制浏览器按照最新的标准去渲染当前的网页-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--
+        viewport：视口，支持响应式布局。
+     width: 初始宽度与设备的宽度相同
+     initial-scale：初始的缩放比，1:1
+     -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>网页</title>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+
+    <!-- 1. 导入bootstrap中的css样式文件 -->
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <!-- 3. 导入bootstrap的js文件 -->
+    <script src="../bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+    <!--1.head-->
+    <div class="container-fluid">
+        <!--图片-->
+        <div class="row">
+            <img src="../img/top_banner.jpg" width="100%" class="img-responsive">
+        </div>
+
+        <!--搜索栏-->
+        <div class="row padd-top" style="margin: 10px 0;">
+            <div class="col-md-3">
+                <img src="../img/logo.jpg" class="img-responsive">
+            </div>
+
+            <div class="col-md-6">
+                <!-- 文本框与按钮在同一行 -->
+                <input type="text" placeholder="请输入路线名称" class="search_input"/>
+                <a href="#" class="search-button"><i class="glyphicon glyphicon-search"></i> 搜 索</a>
+            </div>
+
+            <div class="col-md-3">
+                <img src="../img/hotel_tel.png">
+            </div>
+
+        </div>
+
+        <!--导航条-->
+        <div class="row" style="background-color: yellow">
+            <!--第三行：导航条，使用bootstrap的组件 -->
+            <nav class="navbar navbar-default" style="margin-bottom: 0">
+                <div class="container-fluid">
+                    <!-- 导航条上的各项-->
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="">首页</a></li>
+                            <li><a href="javascript:;">门票</a></li>
+                            <li><a href="javascript:;">酒店</a></li>
+                            <li><a href="javascript:;">机票+酒店</a></li>
+                            <li><a href="javascript:;">香港车票</a></li>
+                            <li><a href="javascript:;">出境游</a></li>
+                            <li><a href="javascript:;">国内游</a></li>
+                            <li><a href="javascript:;">港澳游</a></li>
+                            <li><a href="javascript:;">抱团定制</a></li>
+                            <li><a href="javascript:;">全球自由行</a></li>
+                            <li><a href="javascript:;">旅游攻略</a></li>
+                            <li><a href="javascript:;">租车</a></li>
+                            <li><a href="javascript:;">国际电话卡</a></li>
+                            <li><a href="javascript:;">商业保险</a></li>
+                            <li><a href="javascript:;">本地导游</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!--轮播图-->
+        <div class="row">
+            <!-- 轮播图由三部分组成：指示器，图片，左右点击的按钮 -->
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2000">
+                <!-- 指示器，下面的白色小圆点 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!--轮播的图片 -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img style="width: 100%" src="../img/desc_banner1.jpg">
+                    </div>
+                    <div class="item">
+                        <img style="width: 100%"  src="../img/desc_banner2.jpg">
+                    </div>
+                    <div class="item">
+                        <img  style="width: 100%" src="../img/desc_banner3.jpg">
+                    </div>
+                </div>
+
+                <!-- 控制按钮 -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!--2.body-->
+    <div class="container">
+        <!--海外精选-->
+        <div class="row">
+            <div class="col-md-12 jx_top">
+                <img src="../img/icon_1.jpg" alt="">
+                厚浦精选
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 route">
+                <img src="../img/jingwai.jpg">
+                <p>价格实惠 海外游玩全天免费</p>
+                <span style="color: red">&yen;899</span>
+            </div>
+            <div class="col-md-3 route">
+                <img src="../img/jingwai.jpg">
+                <p>价格实惠 海外游玩全天免费</p>
+                <span style="color: red">&yen;899</span>
+            </div>
+            <div class="col-md-3 route">
+                <img src="../img/jingwai.jpg">
+                <p>价格实惠 海外游玩全天免费</p>
+                <span style="color: red">&yen;899</span>
+            </div>
+            <div class="col-md-3 route">
+                <img src="../img/jingwai.jpg">
+                <p>价格实惠 海外游玩全天免费</p>
+                <span style="color: red">&yen;899</span>
+            </div>
+        </div>
+        <!--国内游-->
+        <div class="row">
+            <div class="col-md-12 jx_top">
+                <img src="../img/icon_1.jpg" alt="">
+                国内游
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-4 route">
+                <img src="../img/guonei_big.jpg" alt="">
+            </div>
+            <div class="col-md-8 ">
+                <div class="col-md-4">
+                    <img src="../img/guonei.jpg" alt="">
+                    <p>价格实惠 海外游玩全天免费</p>
+                    <span style="color: red">&yen;899</span>
+                </div>
+                <div class="col-md-4">
+                    <img src="../img/guonei.jpg" alt="">
+                    <p>价格实惠 海外游玩全天免费</p>
+                    <span style="color: red">&yen;899</span>
+                </div>
+                <div class="col-md-4">
+                    <img src="../img/guonei.jpg" alt="">
+                    <p>价格实惠 海外游玩全天免费</p>
+                    <span style="color: red">&yen;899</span>
+                </div>
+                <div class="col-md-4">
+                    <img src="../img/guonei.jpg" alt="">
+                    <p>价格实惠 海外游玩全天免费</p>
+                    <span style="color: red">&yen;899</span>
+                </div>
+                <div class="col-md-4">
+                    <img src="../img/guonei.jpg" alt="">
+                    <p>价格实惠 海外游玩全天免费</p>
+                    <span style="color: red">&yen;899</span>
+                </div>
+                <div class="col-md-4">
+                    <img src="../img/guonei.jpg" alt="">
+                    <p>价格实惠 海外游玩全天免费</p>
+                    <span style="color: red">&yen;899</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 jx_top">
+                <img src="../img/icon_1.jpg" alt="">
+                境外游
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-4 route">
+                <img src="../img/jingwai_big.jpg" alt="">
+            </div>
+            <div class="col-md-8 ">
+                <div class="col-md-4">
+                    <img src="../img/jingwai.jpg" alt="">
+                    <p>价格实惠 海外游玩全天免费</p>
+                    <span style="color: red">&yen;899</span>
+                </div>
+                <div class="col-md-4">
+                    <img src="../img/jingwai.jpg" alt="">
+                    <p>价格实惠 海外游玩全天免费</p>
+                    <span style="color: red">&yen;899</span>
+                </div>
+                <div class="col-md-4">
+                    <img src="../img/jingwai.jpg" alt="">
+                    <p>价格实惠 海外游玩全天免费</p>
+                    <span style="color: red">&yen;899</span>
+                </div>
+                <div class="col-md-4">
+                    <img src="../img/jingwai.jpg" alt="">
+                    <p>价格实惠 海外游玩全天免费</p>
+                    <span style="color: red">&yen;899</span>
+                </div>
+                <div class="col-md-4">
+                    <img src="../img/jingwai.jpg" alt="">
+                    <p>价格实惠 海外游玩全天免费</p>
+                    <span style="color: red">&yen;899</span>
+                </div>
+                <div class="col-md-4">
+                    <img src="../img/jingwai.jpg" alt="">
+                    <p>价格实惠 海外游玩全天免费</p>
+                    <span style="color: red">&yen;899</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--3。end-->
+    <div class="container-fluid">
+        <div class="row">
+        <img src="../img/footer_service.png" width="100%" class="img-responsive">
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 company">
+                武汉厚浦教育科技股份有限公司 版权所有  Copyright 2006-2020, All Rights Reserved 鄂ICP备11005077号-1
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
